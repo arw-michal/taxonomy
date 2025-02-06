@@ -1,0 +1,93 @@
+version: 3
+created_by: "arw-michal"
+domain: security
+seed_examples:
+  - context: |
+      IBM QRadar SIEM is a Security Information and Event Management (SIEM) system that provides real-time threat detection, log management, and compliance reporting.
+    questions_and_answers:
+      - question: "What is IBM QRadar SIEM?"
+        answer: "IBM QRadar SIEM is a security platform that collects, normalizes, and analyzes log data to detect security threats and compliance violations in real-time."
+      - question: "What are the key features of IBM QRadar SIEM?"
+        answer: |
+          - Real-time threat detection
+          - Security event correlation
+          - Log management and forensic analysis
+          - Compliance reporting (GDPR, PCI-DSS, HIPAA)
+          - AI-driven threat intelligence integration
+          - Custom rule-based event detection
+      - question: "How does IBM QRadar SIEM help in compliance management?"
+        answer: |
+          IBM QRadar SIEM automates compliance reporting by collecting and analyzing security event logs, ensuring adherence to standards such as GDPR, HIPAA, and PCI-DSS.
+
+  - context: |
+      IBM QRadar SIEM installation involves setting up a server, configuring event sources, and integrating with security tools.
+    questions_and_answers:
+      - question: "What are the system requirements for IBM QRadar SIEM?"
+        answer: |
+          - Minimum 32GB RAM, 8 CPU cores, 500GB disk space
+          - Supported OS: RHEL 8, CentOS 8, Ubuntu 20.04
+          - Network access on ports 514 (syslog), 443 (UI), 22 (SSH)
+      - question: "How do you install IBM QRadar SIEM?"
+        answer: |
+          1. Download the installer from IBM Passport Advantage.
+          2. Run `sudo ./setup.sh` on the server.
+          3. Follow the on-screen installation wizard.
+          4. Configure log sources and security event rules.
+      - question: "What are the post-installation steps for IBM QRadar SIEM?"
+        answer: |
+          - Change default admin credentials.
+          - Configure log sources for event ingestion.
+          - Enable security correlation rules and alerts.
+
+  - context: |
+      IBM QRadar SIEM provides AI-driven analytics and automated responses to security incidents.
+    questions_and_answers:
+      - question: "How does IBM QRadar SIEM use AI for threat detection?"
+        answer: |
+          IBM QRadar SIEM integrates with IBM Watson AI to analyze patterns in security logs, detect anomalies, and reduce false positives.
+      - question: "What is an offense in IBM QRadar SIEM?"
+        answer: |
+          An offense is a security event detected by QRadar's correlation rules that requires further investigation.
+      - question: "How can IBM QRadar SIEM automate threat response?"
+        answer: |
+          - Automatically generates security alerts.
+          - Sends notifications to SOC teams.
+          - Integrates with SOAR (Security Orchestration, Automation, and Response) tools.
+
+  - context: |
+      IBM QRadar SIEM supports organizations in cyber security regulatory compliance reporting.
+    questions_and_answers:
+      - question: "What compliance standards does IBM QRadar SIEM support?"
+        answer: |
+          - GDPR (General Data Protection Regulation)
+          - PCI-DSS (Payment Card Industry Data Security Standard)
+          - HIPAA (Health Insurance Portability and Accountability Act)
+          - ISO 27001 (Information Security Standard)
+      - question: "How to generate a compliance report in IBM QRadar SIEM?"
+        answer: |
+          - Go to the Reports section of the QRadar interface.
+          - Select the required compliance report template.
+          - Schedule the report to be generated periodically.
+      - question: "Does IBM QRadar SIEM support automated compliance monitoring?"
+        answer: |
+          Yes, IBM QRadar SIEM continuously monitors security events for compliance violations and provides real-time alerts.
+
+  - context: |
+      IBM QRadar SIEM enables central monitoring of cybersecurity events and investigations.
+    questions_and_answers:
+      - question: "How does IBM QRadar SIEM detect threats?"
+        answer: "IBM QRadar SIEM correlates logs, applies AI analytics, and integrates with IBM X-Force Threat Intelligence."
+      - question: "Can IBM QRadar SIEM be integrated with other tools?"
+        answer: "Yes, QRadar SIEM supports integration with tools such as Splunk, Cisco, Palo Alto Networks, and AWS GuardDuty."
+      - question: "How does IBM QRadar SIEM handle incident response?"
+        answer: |
+          IBM QRadar SIEM provides real-time alerts, automated responses, and integrations with SOAR platforms to mitigate threats quickly.
+
+document_outline: |
+  Documentation about IBM QRadar SIEM covering its installation, features, and security use cases.
+
+document:
+  repo: https://github.com/arw-michal/AiLab-product
+  commit: latest
+  patterns:
+    - security/ibm_qradar/*

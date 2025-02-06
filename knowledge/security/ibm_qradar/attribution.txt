@@ -1,0 +1,5 @@
+Title of work: IBM QRadar SIEM
+Source: IBM Official Documentation
+Link: https://github.com/arw-michal/AiLab-product/tree/main/security/QRadar_SIEM
+License: Proprietary (IBM Documentation)
+Creator: IBM Research

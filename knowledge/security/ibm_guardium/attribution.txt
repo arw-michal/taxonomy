@@ -1,0 +1,5 @@
+Title of work: IBM Guardium Data Protection
+Source: IBM Official Documentation
+Link: https://www.ibm.com/docs/en/gdp/12.x
+License: Proprietary (IBM Documentation)
+Creator: IBM Research

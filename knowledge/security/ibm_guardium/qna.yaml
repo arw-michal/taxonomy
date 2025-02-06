@@ -1,0 +1,92 @@
+version: 3
+created_by: "arw-michal"
+domain: security
+seed_examples:
+  - context: |
+      IBM Guardium Data Protection is a comprehensive data security platform designed to protect structured and unstructured data across multiple environments.
+    questions_and_answers:
+      - question: "What is IBM Guardium Data Protection?"
+        answer: |
+          IBM Guardium Data Protection is a data security solution that monitors, audits, and protects sensitive data in databases, data lakes, and cloud environments.
+      - question: "What are the key features of IBM Guardium?"
+        answer: |
+          - Real-time data activity monitoring
+          - Automated compliance reporting
+          - Advanced threat analytics
+          - User behavior analytics (UBA)
+          - Integration with SIEM and cloud security platforms
+      - question: "How does IBM Guardium enhance data security?"
+        answer: |
+          IBM Guardium provides real-time visibility into data activity, detects anomalies, and applies encryption and masking techniques to protect sensitive information.
+
+  - context: |
+      IBM Guardium provides comprehensive auditing and monitoring capabilities to prevent unauthorized access and detect anomalies in database activity.
+    questions_and_answers:
+      - question: "How does IBM Guardium detect unauthorized access?"
+        answer: |
+          IBM Guardium monitors user behavior, detects unusual access patterns, and triggers alerts when suspicious activities are detected.
+      - question: "What types of databases does IBM Guardium support?"
+        answer: |
+          - Relational Databases (Oracle, SQL Server, MySQL, PostgreSQL)
+          - NoSQL Databases (MongoDB, Cassandra)
+          - Cloud Databases (Amazon RDS, Azure SQL, Google Cloud Spanner)
+      - question: "Can IBM Guardium integrate with third-party security tools?"
+        answer: |
+          Yes, Guardium integrates with SIEM platforms, threat intelligence solutions, and cloud-native security services.
+
+  - context: |
+      IBM Guardium automates compliance reporting for regulations like GDPR, HIPAA, and PCI-DSS.
+    questions_and_answers:
+      - question: "Which compliance standards does IBM Guardium support?"
+        answer: |
+          - GDPR (General Data Protection Regulation)
+          - HIPAA (Health Insurance Portability and Accountability Act)
+          - PCI-DSS (Payment Card Industry Data Security Standard)
+          - SOX (Sarbanes-Oxley Act)
+      - question: "How does IBM Guardium automate compliance reporting?"
+        answer: |
+          IBM Guardium generates automated reports, stores audit logs, and ensures that sensitive data access is monitored and controlled.
+      - question: "How does Guardium ensure audit log integrity?"
+        answer: |
+          Guardium uses cryptographic hashing, access control policies, and tamper-proof storage to maintain audit log integrity.
+
+  - context: |
+      IBM Guardium can be deployed on-premises, in the cloud, or in hybrid environments.
+    questions_and_answers:
+      - question: "Can IBM Guardium be deployed in the cloud?"
+        answer: |
+          Yes, IBM Guardium supports cloud deployments in AWS, Microsoft Azure, and Google Cloud.
+      - question: "What are the key benefits of deploying IBM Guardium in a hybrid environment?"
+        answer: |
+          - Centralized security monitoring across cloud and on-premises systems
+          - Scalable threat detection and compliance management
+          - Automated incident response and policy enforcement
+      - question: "How does IBM Guardium handle multi-cloud security?"
+        answer: |
+          Guardium collects security telemetry from multiple cloud providers and applies AI-driven analytics for unified risk assessment.
+
+  - context: |
+      IBM Guardium requires proper optimization and configuration to ensure optimal performance and threat detection accuracy.
+    questions_and_answers:
+      - question: "How can IBM Guardium performance be optimized?"
+        answer: |
+          - Regularly update security policies and access control rules.
+          - Optimize data masking and encryption techniques.
+          - Implement behavioral analytics to reduce false positives.
+      - question: "What are common troubleshooting steps for IBM Guardium?"
+        answer: |
+          1. Review system logs and error messages.
+          2. Validate network connectivity to database servers.
+          3. Restart Guardium services and reapply security policies.
+      - question: "How can organizations ensure continuous improvement with IBM Guardium?"
+        answer: |
+          Organizations should continuously analyze security event logs, conduct periodic audits, and integrate new threat intelligence sources.
+
+document_outline: |
+  This document provides an overview of IBM Guardium Data Protection, including its features, monitoring capabilities, compliance support, deployment options, and performance optimization strategies.
+
+document:
+  repo: https://github.com/arw-michal/AiLab-product
+  commit: latest
+  patterns:
+    - security/ibm_guardium/*
